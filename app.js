@@ -11,6 +11,7 @@ app.config(["$routeProvider", function ($routeProvider) {
 app.controller("HomeController", ["$scope", "$location", function ($scope, $location) {
     'use strict';
     
+    $scope.title = "Where is Vinny???";
     $scope.showMap = function () {
         $location.path("/map");
     };
@@ -21,7 +22,7 @@ app.controller("HomeController", ["$scope", "$location", function ($scope, $loca
 app.controller("MapController", ["$scope", function ($scope) {
     'use strict';
     
-    $scope.title = "Google Maps API v3";
+    $scope.title = "Google Maps API v3 - My House";
 }]);
 
 app.directive("gmap", function () {
